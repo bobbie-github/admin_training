@@ -50,7 +50,7 @@ export default defineComponent({
       const userStore = useUserStore()
       try {
         const res = await userStore.login(values)
-        // console.log('登录成功', res)
+        console.log('登录成功', res)
         router.replace('/')
       } catch (error) {
         console.log('登录失败', error)
