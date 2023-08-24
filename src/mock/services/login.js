@@ -7,7 +7,7 @@ const login = options => {
   const { username, password } = bodyParser(options.body)
 
   if (!username || !password) {
-    return resultError({ message: '请输入用户名或密码！' })
+    return resultError({ message: '请输入用户名或密码！ ' })
   }
 
   const user = users.find(item => item.username === username)
